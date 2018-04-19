@@ -1,0 +1,5 @@
+.elgg-listing-full-header {
+	.elgg-menu-entity-container {
+		display: none;
+	}
+}

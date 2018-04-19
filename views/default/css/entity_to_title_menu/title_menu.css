@@ -1,0 +1,10 @@
+.elgg-menu-title {
+	
+	.elgg-menu-item-title-menu-toggle.elgg-menu-item-has-dropdown {
+	
+		.elgg-menu-closed:after,
+		.elgg-menu-opened:after {
+			content: unset;
+		}
+	}
+}
