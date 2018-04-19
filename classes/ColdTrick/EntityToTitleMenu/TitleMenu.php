@@ -2,6 +2,9 @@
 
 namespace ColdTrick\EntityToTitleMenu;
 
+use Elgg\Collections\CollectionInterface;
+use Elgg\Menu\UnpreparedMenu;
+
 class TitleMenu {
 	
 	/**
@@ -18,12 +21,14 @@ class TitleMenu {
 		
 		/* @var $return \Elgg\Menu\MenuItems */
 		$return = $hook->getValue();
+		if (!$return instanceof CollectionInterface) {
+			return;
+		}
 		
-		/* @var $entity_menu \Elgg\Menu\UnpreparedMenu */
 		$entity_menu = elgg()->menus->getUnpreparedMenu('entity', [
 			'entity' => $entity,
 		]);
-		if (empty($entity_menu)) {
+		if (!$entity_menu instanceof UnpreparedMenu) {
 			return;
 		}
 		
