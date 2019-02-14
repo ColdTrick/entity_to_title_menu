@@ -37,6 +37,10 @@ class TitleMenu {
 		/* @var $menu_item \ElggmenuItem */
 		foreach ($entity_menu->getItems() as $menu_item) {
 			if ($return->has($menu_item->getId())) {
+				if ($menu_item->getId() === 'edit') {
+					// move edit always to z-last location
+					$return->get('edit')->setSection('z-last');
+				}
 				continue;
 			}
 			
