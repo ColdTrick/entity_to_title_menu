@@ -1,2 +1,7 @@
 Version history
 ===============
+
+1.0 (2019-03-27):
+
+- added: always move the edit menu item to z-last section
+- added: move entity menu to title menu on full view
