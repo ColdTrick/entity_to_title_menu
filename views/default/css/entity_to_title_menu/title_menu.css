@@ -4,7 +4,7 @@
 	
 		.elgg-menu-closed:after,
 		.elgg-menu-opened:after {
-			content: unset;
+			content: unset !important;
 		}
 	}
 }
