@@ -1,6 +1,10 @@
 Version history
 ===============
 
+1.0.1 (2019-12-09):
+
+- fixed: make sure that the extra dropdown icon is not visible
+
 1.0 (2019-03-27):
 
 - added: always move the edit menu item to z-last section
