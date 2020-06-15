@@ -1,4 +1,4 @@
-.elgg-listing-full-header {
+.elgg-layout-content > .elgg-listing-full > .elgg-listing-full-header {
 	.elgg-menu-entity-container {
 		display: none;
 	}
